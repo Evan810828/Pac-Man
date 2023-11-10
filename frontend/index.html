@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/pacman.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/board.js"></script>
+		<script type="text/javascript" src='js/Cell.js'></script>
+		<script type="text/javascript" src='js/game.js'></script>
+		<script type="text/javascript" src='js/pacman.js'></script>
+		<script type="text/javascript" src='js/ghost.js'></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                    initGame();
+            };
+        </script>
+    </head>
+    <body>
+        <h1>PA<canvas id="canvas-panel-title-pacman"></canvas>MAN</h1>
+        <div id="panel">
+            <div id="control">
+                <h2>Set Level</h2>
+                <div class="level">Level 1</div>
+                <div class="level">Level 2</div>
+                <div class="level">Level 3</div>
+                <div id="slide">
+                    <div>Brightness</div>
+                    <input type="range" id="brightness" value="0.50" min="0" max="1.00" step="0.01" />
+                </div>
+            </div>
+            <div id="board">
+                <div id="info">
+                    <div>Score: 0</div>
+                    <div>Lives: 3</div>
+                </div>
+                <canvas id="canvas-board"></canvas>
+            </div>
+            <div id="help">
+                <h2 class="help">- help -</h2>
+                <div class="control">
+                    <span class="key">AnyKey :</span>
+                    <span class="action">START GAME</span>
+                </div>
+                <div class="control">
+                    <span class="key">Esc :</span>
+                    <span class="action">EXIT GAME</span>
+                </div>
+                <div class="control">
+                    <span class="key">ARROW LEFT :</span>
+                    <span class="action">MOVE LEFT</span>
+                </div>
+                <div class="control">
+                    <span class="key">ARROW RIGHT :</span>
+                    <span class="action">MOVE RIGHT</span>
+                </div>
+                <div class="control">
+                    <span class="key">ARROW DOWN :</span>
+                    <span class="action">MOVE DOWN</span>
+                </div>
+                <div class="control">
+                    <span class="key">ARROW UP :</span>
+                    <span class="action">MOVE UP</span>
+                </div>
+                <div class="control">
+                    <span class="key">P :</span>
+                    <span class="action">PAUSE</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
